@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+<title>聯絡我們</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="style/mail.css"rel="stylesheet" type="text/css" media="all">
+<link href="style/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="style/AGJS.css" rel="stylesheet" type="text/css" media="all">
+<link rel="icon" href="image/logo.ico" type="image/x-icon" />
+
+</head>
+<body id="top">
+<div class="wrapper row1">
+
+<!-- content -->
+<main>
+<br>
+<div class="formDiv">
+    <div class="containerBox">
+        <div class="titleBox">
+            <div class="titleSubEn">GET IN TOUCH</div>
+            <div class="titleEn">CONTACT US</div>
+            <!-- <h2 class="titleCht">聯絡我們</h2> -->
+            <div class="titleSubCn">聯絡我們</div>
+        </div>
+        <div class="thankInfo">
+    歡迎您透過本信件表單詢問住宿、訂房相關問題，或與我們分享您的心得與建議。   
+    </div>
+	<!-- form-start -->
+    <form method="post" action="CustomerServiceMail" target="nm_iframe" autocomplete="off">
+    <ul class="contactFormList">
+    <li class="full">
+        <div class="contactItemBox">
+            <label for="data_category_title">問題分類</label>
+            <select name="data_category_title" id="data_category_title">
+                <option value="" selected="" disabled="">請選擇問題</option>
+                    <option value="訂房諮詢">訂房諮詢</option>
+                    <option value="餐飲諮詢">餐飲諮詢</option>
+                    <option value="住宿諮詢">住宿洽詢</option>
+                    <option value="行程諮詢">行程諮詢</option>
+                    <option value="其他諮詢">其他諮詢</option>
+            </select>
+        </div>
+    </li>
+    
+    <li>
+        <div class="contactItemBox">
+            <label for="data_name">姓名</label>
+            <input type="text" id="data_name" name="data_name" data-note="姓名" class="require" placeholder="請輸入姓名">
+        </div>
+    </li>
+    <li>
+        <div class="contactItemBox">
+            <label for="data_telephone">聯絡電話</label>
+            <input type="text" id="data_telephone" name="data_telephone" data-note="聯絡電話" placeholder="請輸入聯絡電話">
+        </div>
+    </li>
+    <li>
+        <div class="contactItemBox">
+            <label for="data_email">電子信箱</label>
+            <input type="text" id="data_email" name="data_email" data-note="電子信箱" class="require" placeholder="請輸入電子信箱">
+        </div>
+    </li>
+    <li class="full">
+        <div class="contactItemBox">
+            <label for="data_exp">內容說明</label>
+            <textarea id="data_exp" name="data_exp" data-note="內容說明" class="require" placeholder="請輸入內容"></textarea>
+        </div>
+    </li>
+    
+    </ul>
+    <button type="submit" class="contactFormSubmitBtn moreBtn" id="btn_submit">確認送出</button>
+    </form>
+    <!-- form-end -->
+    <iframe id="id_iframe" name="nm_iframe" style="display: none;"></iframe>
+    </div>
+  </div>
+<br>
+</main>
+
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/header_footer.js"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+<script src="js/mail.js"></script>
+<!-- <script src="layout/scripts/jquery.min.js"></script> -->
+<!-- <script src="layout/scripts/jquery.backtotop.js"></script> -->
+<!-- <script src="layout/scripts/jquery.mobilemenu.js"></script> -->
+</body>
+</html>
