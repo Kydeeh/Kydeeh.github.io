@@ -1,6 +1,7 @@
 
 const date_format = "YYYY-MM-DD";
-const url = "roomstatus/";
+// const url = "roomstatus/";
+const url = "http://34.80.14.134:8081/AGJS/main/roomstatus/";
 const func = {
     "add": "add/", "Search": "search/", "Edit": "update/", "Delete": "delete"
 };

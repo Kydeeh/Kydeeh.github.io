@@ -1,5 +1,6 @@
 
-const jrn_url = "jrn/";
+// const jrn_url = "jrn/";
+const jrn_url = "http://34.80.14.134:8081/AGJS/main/jrn/";
 const func = {
     "add": "add/", "Search": "search/", "Edit": "update/", "Delete": "delete"
 };

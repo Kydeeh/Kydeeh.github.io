@@ -38,11 +38,11 @@ $(document).ready(function () {
     let phone = $.trim($(".USER_PHONE").val());
     let vertify = $.trim($(".VERTIFY_CODE").val());
     //姓名輸入限制
-//    if (user_name === "") {
-//      alert("請輸入姓名");
-//      $(".USER_NAME").focus();
-//      return;
-//    }
+    //    if (user_name === "") {
+    //      alert("請輸入姓名");
+    //      $(".USER_NAME").focus();
+    //      return;
+    //    }
     //生日輸入限制
     if (year == "" || month == "" || day == "") {
       alert("請選擇生日日期");
@@ -217,10 +217,10 @@ $("button.btn").on("click", function () {
   let room_name_text = $(this).parent().siblings().find("h1.room_name");
 
 <<<<<<< HEAD
-  if(rest_room_count > 0){
-	let list_html ='';
+  if (rest_room_count > 0) {
+    let list_html = '';
     for (var i = 0; i < room_number; i++) {
-	list_html = `
+      list_html = `
 		<li style="list-style-type: none;">
 		<div class="cart_room">
 		<div class="cart_room_name">${room_name_text.text()}</div>
@@ -276,7 +276,7 @@ $("button.btn").on("click", function () {
       $(this).siblings(".minus_btn").addClass("hidden_caution");
       $(this).addClass("hidden_caution");
 <<<<<<< HEAD
-   };   
+    };
   };
 =======
 

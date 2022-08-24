@@ -1,4 +1,5 @@
-const odprocess_url = "orderprocess/";
+// const odprocess_url = "orderprocess/";
+const odprocess_url = "http://34.80.14.134:8081/AGJS/main/orderprocess/";
 const ecpay_url = "ecpayprocess/";
 const func = {
     "Check": "check/", "Pay": "pay/", "Pay2": "dopay/"
